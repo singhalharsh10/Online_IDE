@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Online Compiler and Editor</title>
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="edit.png">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body style="background-color: lightgray;" class="container-fluid">
+
+    <div style="font-size: large; text-align:center;">
+        <br>
+        <h1>
+            <u>
+                <strong>
+                    <em>IDE FOR PROGRAMMING</em>
+                </strong>
+            </u>
+        </h1>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 col-lg-7">
+            <!-- For black strip -->
+            <div class="column">
+                <div id="theme" class="row">
+                    <div class="col-md-5">
+                        <div class="dropdown" id="first">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                                Languages
+                            </button>
+                            <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" id="java">JAVA</a>
+                                <a class="dropdown-item" id="c">C++</a>
+                                <a class="dropdown-item" id="python">Python</a>
+                            </div>
+                        </div>
+                        <div id="lange">
+                            <h6>Language - </h6>
+                        </div>
+                        <div id="write_lang">
+                            <h6>C++ </h6>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-secondary btn-sm" type="button" id="fullscreen">
+                            Full Screen
+                        </button>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="dropdown" id="second">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                                Themes
+                            </button>
+                            <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenuButton">
+                                <a id="twi" class="dropdown-item">Twilight</a>
+                                <a id="amb" class="dropdown-item">Ambiance</a>
+                                <a id="cha" class="dropdown-item">Chaos</a>
+                                <a id="rome" class="dropdown-item">Chrome</a>
+                                <a id="mid" class="dropdown-item">Clouds_midnight</a>
+                                <a id="clo" class="dropdown-item">Clouds</a>
+                                <a id="cri" class="dropdown-item">Crimson</a>
+                                <a id="ecl" class="dropdown-item">Eclipse</a>
+                                <a id="mer" class="dropdown-item">Merbivore</a>
+                                <a id="nord" class="dropdown-item">Nord_dark</a>
+                                <a id="sol" class="dropdown-item">Solarized_Dark</a>
+                            </div>
+                        </div>
+                        <div id="write_theme">
+                            <h6>Themes</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- --------------------------- -->
+            <div style="text-align:center;">
+                <div id="editor"></div>
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-5">
+            <br>
+            <textarea type="textbabel-polyfill" id="input" placeholder="Enter input here"></textarea>
+            <button type="button" class="btn btn-success" id="first_button">
+                <h5 style="margin: 0;">Compile And Run Program</h5>
+            </button>
+            <textarea type="text" id="output" placeholder="Output will go here"></textarea>
+            <div class="row">
+                <div class="col-md-3">
+                    <div id="t1">
+                        <h5><b>Time(SEC)</b></h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div id="m1">
+                        <h5><b>Memory(KB)</b></h5>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="w1">
+                        <h5><b>Web-Link(Sharable)</b></h5>
+                    </div>
+                </div>
+            </div>
+            <div id="s1">
+                <hr style="border: 1px solid black;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div id="time">
+                            <h6></h6>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div id="memory">
+                            <h6></h6>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="save">
+                            <h6></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer font-small blue">
+        <div class="footer-copyright text-center py-6" style="position: absolute; width: 100%;">© Designed and Developed by <a href="https://www.linkedin.com/in/harsh-singhal-3a14a5188/" target="_blank">HARSH SINGHAL
+        </div>
+    </footer>
+
+    <script src="app.js" type="text/javascript" charset="utf-8"></script>
+    <script src="index.js"> </script>
+</body>
+
+</html>

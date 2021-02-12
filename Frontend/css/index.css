@@ -1,0 +1,90 @@
+#editor {
+    height: 480px;
+    font-size: large;
+    border: 3px solid #73AD21;
+}
+
+#input {
+    height: 150px;
+    width: 100%;
+    border: 3px solid rgb(173, 42, 33);
+}
+
+#output {
+    height: 150px;
+    width: 100%;
+    border: 3px solid rgb(173, 42, 33);
+}
+
+#first_button {
+    display: block;
+    border: 3px solid blue;
+    font-size: 18px;
+    color: blue;
+    background-color: #e7e7e7;
+    color: black;
+    margin: auto auto 5px auto;
+}
+
+#copyright {
+    font-size: 12px;
+    background-color: #000000;
+}
+
+#first {
+    display: inline-block;
+}
+
+#theme{
+    background-color: black; 
+    border: 2px solid green; 
+    padding: 10px; 
+    margin: 10px;
+}
+
+#dropdownMenuButton{
+    font-size: small; 
+    padding: 5px 5px;
+}
+
+#lange {
+    display: inline-block;
+    color: blanchedalmond;
+}
+
+#write_lang{
+    display: inline-block;
+    color: blanchedalmond;
+}
+
+#second{
+    display: inline-block;
+}
+
+#dropdownMenuButton{
+    font-size: small; 
+    padding: 5px 5px;
+}
+
+#write_theme{
+    display: inline-block;
+    color: blanchedalmond;
+}
+
+#s1{
+    height: 150px;;
+}
+
+.scrollable-menu {
+    cursor: pointer;
+    height: auto;
+    max-height: 100px;
+    overflow-x: hidden;
+}
+
+.foot{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;  
+}
